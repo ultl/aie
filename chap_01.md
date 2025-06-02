@@ -1,18 +1,18 @@
-# **Chapter 1. Introduction to Building AI Applications with Foundation Models**
+# Chapter 1. Introduction to Building AI Applications with Foundation Models
 
-Developing AI models traditionally demands substantial resources and specialized
-expertise. Model as a Service (MaaS) streamlines this process by allowing
-developers to access advanced AI capabilities via APIs, eliminating the need to
-build or maintain models in-house.
+Developing AI models has traditionally required significant resources and
+specialized expertise. Model as a Service (MaaS) simplifies this process by
+providing developers with access to advanced AI capabilities via APIs,
+eliminating the need to build or maintain models in-house.
 
 ## A. The Rise of AI Engineering
 
-### **1. From Language Models to Large Language Models**
+### 1. From Language Models to Large Language Models
 
-- Language models leverage statistical properties of language for tasks such as
+- Language models utilize statistical properties of language for tasks such as
   text generation and comprehension.
-- **Historical context:** Claude Shannon’s pioneering work in information theory
-  (entropy, redundancy, channel capacity) established the groundwork for
+- **Historical context:** Claude Shannon’s foundational work in information
+  theory (entropy, redundancy, channel capacity) laid the groundwork for
   language modeling.
 - Early language models were limited in scope and typically focused on single
   languages.
@@ -34,12 +34,11 @@ build or maintain models in-house.
   time-consuming to obtain.
 - **Unsupervised vs. self-supervised:** Unsupervised learning uses no labels;
   self-supervised learning generates labels from the input data itself.
-
 - **Large Language Models (LLMs):** Decoder-only architectures trained on
   massive datasets using self-supervised learning. LLMs generate human-like text
   and perform a wide range of language tasks.
 
-### **2. From Large Language Models to Foundation Models**
+### 2. From Large Language Models to Foundation Models
 
 - Historically, AI research was segmented by data modality: NLP (natural
   language processing) for text, CV (computer vision) for images, and ASR
@@ -52,7 +51,7 @@ build or maintain models in-house.
   <img src="img/tasks.png" alt="AI Tasks" width="50%">
 </p>
 
-### **3. From Foundation Models to AI Engineering**
+### 3. From Foundation Models to AI Engineering
 
 - **AI Engineering** is the discipline of building AI applications using
   foundation models. Key components include:
@@ -61,7 +60,7 @@ build or maintain models in-house.
   - **Fine-tuning:** Customizing models for specific tasks or domains.
   - **Evaluation and Monitoring:** Assessing performance and ensuring
     reliability.
-- The rapid expansion of AI Engineering is fueled by:
+- The rapid expansion of AI Engineering is driven by:
   - The versatility of general-purpose models, which can address a broad array
     of tasks compared to earlier, task-specific models.
   - Increased investment and interest in AI technologies.
@@ -133,103 +132,103 @@ these are easier to evaluate and manage.
   altering its external behavior to improve readability, maintainability, or
   performance.
 
-  # AI product defensibility
+# AI Product Defensibility
+
 - **Defensibility** refers to the ability of an AI product to maintain its
   competitive advantage and protect against imitation or disruption.
 
-**The Core Problem:**
+**Core Challenges:**
 
-- **Easy to build = easy to copy** - Low barriers to entry using foundation
-  models means competitors can quickly replicate your product
-- **Your moat is shallow** - Traditional defensibility strategies don't work
-  when the underlying technology is commoditized
+- **Easy to build = easy to copy:** Low barriers to entry using foundation
+  models mean competitors can quickly replicate your product.
+- **Shallow moat:** Traditional defensibility strategies are less effective when
+  the underlying technology is commoditized.
 
-**The Platform Risk:**
+**Platform Risks:**
 
-- **Building on borrowed power** - Your app is just a layer on top of someone
-  else's model (GPT, Claude, etc.)
-- **Feature absorption threat** - When foundation models improve, they may
-  directly incorporate your app's functionality
-- **Obsolescence risk** - Your specialized tool becomes redundant as base models
-  get better
+- **Building on borrowed power:** Applications are often just a layer on top of
+  someone else’s model (e.g., GPT, Claude).
+- **Feature absorption threat:** As foundation models improve, they may directly
+  incorporate your app’s functionality.
+- **Obsolescence risk:** Specialized tools can become redundant as base models
+  advance.
 
 **PDF Parsing Example:**
 
-- **Temporary advantage** - Building PDF tools made sense when ChatGPT couldn't
-  handle PDFs well
-- **Advantage erosion** - If ChatGPT improves PDF processing, your app loses its
-  core value
-- **Competitive weakness** - Your market position crumbles when foundational
-  assumptions change
+- **Temporary advantage:** Building PDF tools was valuable when ChatGPT lacked
+  PDF capabilities.
+- **Advantage erosion:** As ChatGPT improves PDF processing, such applications
+  lose their core value.
+- **Competitive weakness:** Market position weakens when foundational
+  assumptions change.
 
-**Defensive Options:**
+**Defensive Strategies:**
 
-- **Target open-source users** - Serve customers who want to host models
-  in-house
-- **Focus on deployment needs** - Build for on-premises, security, or compliance
-  requirements
-- **Add unique value layers** - Create features around workflow, UX, or
-  integrations that models can't easily replicate
+- **Target open-source users:** Serve customers who require in-house model
+  hosting.
+- **Focus on deployment needs:** Build for on-premises, security, or compliance
+  requirements.
+- **Add unique value layers:** Develop features around workflow, user
+  experience, or integrations that are difficult for models to replicate.
 
-**Key Takeaway:**
+**Key Takeaway:**\
+Defensibility must extend beyond filling capability gaps in foundation models,
+or products risk obsolescence with each model update.
 
-- You need defensibility beyond just filling capability gaps in foundation
-  models, or you risk being made obsolete by the next model update.
+**Three Competitive Advantages for AI Products:**
 
-- Three competitive advantages for AI products:
-  - **Data Advantage:** Unique datasets that improve model performance.
-  - **Technology Advantage:** Proprietary algorithms or architectures that
-    enhance model capabilities.
-  - **Distribution Advantage:** Established channels or platforms that
-    facilitate user acquisition and retention.
+- **Data Advantage:** Unique datasets that improve model performance.
+- **Technology Advantage:** Proprietary algorithms or architectures that enhance
+  model capabilities.
+- **Distribution Advantage:** Established channels or platforms that facilitate
+  user acquisition and retention.
 
 # Setting Expectations
 
-- How will make you measure the success of your AI product?
-- Quality metrics to measure:
-  - **Accuracy:** How well does the model perform on the intended tasks?
+- How will you measure the success of your AI product?
+- Key quality metrics:
+  - **Accuracy:** How well does the model perform on intended tasks?
   - **Latency:** How quickly does the model respond to queries? (including TTFT
-    - Time To First Token and TPOT - Time Per Output Token)
+    – Time To First Token and TPOT – Time Per Output Token)
   - **Scalability:** Can the model handle increased load without performance
     degradation?
-  - **User Satisfaction:** Are users finding the model's outputs useful and
+  - **User Satisfaction:** Are users finding the model’s outputs useful and
     relevant?
-- **Cost Efficiency:** Is the model's operational cost sustainable relative to
-  its
+- **Cost Efficiency:** Is the model’s operational cost sustainable relative to
+  its value?
 
 # AI Engineering Stack
 
-- Application development
+- **Application Development**
   - AI Interface
-  - Prompt engineering
-  - Context construction
+  - Prompt Engineering
+  - Context Construction
   - Evaluation
 
-- Model development
-  - Inference optimization
-  - Dataset engineering
-  - Model and training
+- **Model Development**
+  - Inference Optimization
+  - Dataset Engineering
+  - Model Training
   - Evaluation
 
-- Infrastructure
-  - Compute management
-  - Data management
+- **Infrastructure**
+  - Compute Management
+  - Data Management
   - Serving
   - Monitoring
 
-# AI Engineering vs ML Engineering
+# AI Engineering vs. ML Engineering
 
 - **AI Engineering** focuses on building applications using foundation models,
   emphasizing prompt engineering, fine-tuning, and model evaluation.
 - **ML Engineering** involves developing and deploying machine learning models,
   including data preprocessing, model training, and performance optimization.
 
-- Model adaptation is a key aspect of AI Engineering, allowing models to be
-  customized for specific tasks or domains.
+- Model adaptation is a key aspect of AI Engineering, enabling customization for
+  specific tasks or domains.
 - **Model adaptation techniques:**
   - **Fine-tuning:** Adjusting a pre-trained model on a smaller, task-specific
     dataset.
-  - **Prompt tuning:** Modifying the input prompts to guide the model's
-    responses.
+  - **Prompt tuning:** Modifying input prompts to guide the model’s responses.
   - **Adapter layers:** Adding small, trainable layers to a pre-trained model
     without modifying the entire architecture.
