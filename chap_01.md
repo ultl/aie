@@ -132,3 +132,104 @@ these are easier to evaluate and manage.
 - **Code refactoring:** The process of restructuring existing code without
   altering its external behavior to improve readability, maintainability, or
   performance.
+
+  # AI product defensibility
+- **Defensibility** refers to the ability of an AI product to maintain its
+  competitive advantage and protect against imitation or disruption.
+
+**The Core Problem:**
+
+- **Easy to build = easy to copy** - Low barriers to entry using foundation
+  models means competitors can quickly replicate your product
+- **Your moat is shallow** - Traditional defensibility strategies don't work
+  when the underlying technology is commoditized
+
+**The Platform Risk:**
+
+- **Building on borrowed power** - Your app is just a layer on top of someone
+  else's model (GPT, Claude, etc.)
+- **Feature absorption threat** - When foundation models improve, they may
+  directly incorporate your app's functionality
+- **Obsolescence risk** - Your specialized tool becomes redundant as base models
+  get better
+
+**PDF Parsing Example:**
+
+- **Temporary advantage** - Building PDF tools made sense when ChatGPT couldn't
+  handle PDFs well
+- **Advantage erosion** - If ChatGPT improves PDF processing, your app loses its
+  core value
+- **Competitive weakness** - Your market position crumbles when foundational
+  assumptions change
+
+**Defensive Options:**
+
+- **Target open-source users** - Serve customers who want to host models
+  in-house
+- **Focus on deployment needs** - Build for on-premises, security, or compliance
+  requirements
+- **Add unique value layers** - Create features around workflow, UX, or
+  integrations that models can't easily replicate
+
+**Key Takeaway:**
+
+- You need defensibility beyond just filling capability gaps in foundation
+  models, or you risk being made obsolete by the next model update.
+
+- Three competitive advantages for AI products:
+  - **Data Advantage:** Unique datasets that improve model performance.
+  - **Technology Advantage:** Proprietary algorithms or architectures that
+    enhance model capabilities.
+  - **Distribution Advantage:** Established channels or platforms that
+    facilitate user acquisition and retention.
+
+# Setting Expectations
+
+- How will make you measure the success of your AI product?
+- Quality metrics to measure:
+  - **Accuracy:** How well does the model perform on the intended tasks?
+  - **Latency:** How quickly does the model respond to queries? (including TTFT
+    - Time To First Token and TPOT - Time Per Output Token)
+  - **Scalability:** Can the model handle increased load without performance
+    degradation?
+  - **User Satisfaction:** Are users finding the model's outputs useful and
+    relevant?
+- **Cost Efficiency:** Is the model's operational cost sustainable relative to
+  its
+
+# AI Engineering Stack
+
+- Application development
+  - AI Interface
+  - Prompt engineering
+  - Context construction
+  - Evaluation
+
+- Model development
+  - Inference optimization
+  - Dataset engineering
+  - Model and training
+  - Evaluation
+
+- Infrastructure
+  - Compute management
+  - Data management
+  - Serving
+  - Monitoring
+
+# AI Engineering vs ML Engineering
+
+- **AI Engineering** focuses on building applications using foundation models,
+  emphasizing prompt engineering, fine-tuning, and model evaluation.
+- **ML Engineering** involves developing and deploying machine learning models,
+  including data preprocessing, model training, and performance optimization.
+
+- Model adaptation is a key aspect of AI Engineering, allowing models to be
+  customized for specific tasks or domains.
+- **Model adaptation techniques:**
+  - **Fine-tuning:** Adjusting a pre-trained model on a smaller, task-specific
+    dataset.
+  - **Prompt tuning:** Modifying the input prompts to guide the model's
+    responses.
+  - **Adapter layers:** Adding small, trainable layers to a pre-trained model
+    without modifying the entire architecture.
