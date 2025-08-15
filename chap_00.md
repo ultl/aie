@@ -5,7 +5,7 @@
 - NLP is a field of artificial intelligence that focuses on the interaction
   between computers and humans through natural language. Before the advent of
   transformer models, NLP relied heavily on traditional machine learning
-- Two architectures dominated the landscape:
+- Three architectures dominated the landscape:
   - **Recurrent Neural Networks (RNNs)**: RNNs were introduced to handle
     sequential data and showed promise in tasks like language modeling and
     machine translation. However, they struggled with long-range dependencies
